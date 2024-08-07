@@ -2,5 +2,13 @@
   "item.familyjewels.example_item": "Example Item",
   "item.familyjewels.fluorite": "Fluorite",
   "item.familyjewels.raw_fluorite": "Raw Fluorite",
-  "itemgroup.fluorite": "Fluorite Group"
+  "block.familyjewels.fluorite_block": "Fluorite Block",
+  "block.familyjewels.fluorite_ore": "Fluorite Ore",
+  "block.familyjewels.fluorite_end_ore": "Fluorite End Ore",
+  "block.familyjewels.fluorite_nether_ore": "Fluorite Nether Ore",
+  "block.familyjewels.fluorite_deepslate_ore": "Fluorite Deepslate Ore",
+
+
+  "itemgroup.fluorite": "Fluorite Group",
+  "itemgroup.fluorite_blocks": "Fluorite Block Group"
 }

@@ -20,6 +20,7 @@ public class ModItems {
     private static void customIngredients(FabricItemGroupEntries entries){
         entries.add(FLUORITE);
         entries.add(EXAMPLE_ITEM);
+        entries.add(RAW_FLUORITE);
 
     }
 

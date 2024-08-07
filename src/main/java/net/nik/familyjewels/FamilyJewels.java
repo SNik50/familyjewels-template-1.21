@@ -2,6 +2,7 @@ package net.nik.familyjewels;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.nik.familyjewels.block.ModBlocks;
 import net.nik.familyjewels.item.ModItemGroups;
 import net.nik.familyjewels.item.ModItems;
 import org.slf4j.Logger;
@@ -16,6 +17,7 @@ public class FamilyJewels implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.info("Gaze into the abyss");
 	}
