@@ -1,3 +1,6 @@
 {
-  "item.familyjewels.example_item": "Example Item"
+  "item.familyjewels.example_item": "Example Item",
+  "item.familyjewels.fluorite": "Fluorite",
+  "item.familyjewels.raw_fluorite": "Raw Fluorite",
+  "itemgroup.fluorite": "Fluorite Group"
 }

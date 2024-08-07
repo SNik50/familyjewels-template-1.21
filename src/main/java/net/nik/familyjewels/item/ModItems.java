@@ -2,12 +2,14 @@ package net.nik.familyjewels.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.ItemGroups;
 import net.nik.familyjewels.FamilyJewels;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+
+import static net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents.*;
 
 public class ModItems {
 
@@ -20,7 +22,6 @@ public class ModItems {
         entries.add(EXAMPLE_ITEM);
 
     }
-    ItemGroupEvents.modifyEntriesEvent(ItemGroups.Ingredients).register(ModItems::customIngredients);
 
      private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(FamilyJewels.MOD_ID, name), item);
@@ -28,6 +29,8 @@ public class ModItems {
 
      public static void registerModItems() {
                 FamilyJewels.LOGGER.info("registering mod items for " + FamilyJewels.MOD_ID);
-            }
+         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::customIngredients);
+             }
+
 
 }
