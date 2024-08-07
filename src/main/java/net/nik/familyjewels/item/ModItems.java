@@ -1,7 +1,8 @@
-package net.nik.familyjewels;
+package net.nik.familyjewels.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.nik.familyjewels.FamilyJewels;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -11,10 +12,16 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item EXAMPLE_ITEM = registerItem("example_item", new Item(new Item.Settings()));
+    public static final Item FLUORITE = registerItem("fluorite", new Item(new Item.Settings()));
+    public static final Item RAW_FLUORITE = registerItem("raw_fluorite", new Item(new Item.Settings()));
 
-    private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
+    private static void customIngredients(FabricItemGroupEntries entries){
+        entries.add(FLUORITE);
         entries.add(EXAMPLE_ITEM);
+
     }
+    ItemGroupEvents.modifyEntriesEvent(ItemGroups.Ingredients).register(ModItems::customIngredients);
+
      private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(FamilyJewels.MOD_ID, name), item);
      }

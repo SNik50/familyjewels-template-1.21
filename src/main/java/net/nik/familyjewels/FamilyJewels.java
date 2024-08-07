@@ -2,7 +2,7 @@ package net.nik.familyjewels;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.util.Identifier;
+import net.nik.familyjewels.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +18,5 @@ public class FamilyJewels implements ModInitializer {
 		LOGGER.info("Gaze into the abyss");
 	}
 
-
-	}
 
 }
