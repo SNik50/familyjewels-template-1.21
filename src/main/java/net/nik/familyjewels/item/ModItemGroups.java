@@ -20,6 +20,13 @@ public class ModItemGroups {
                         entries.add(ModItems.CHAINSAW);
 
             }).build());
+    public static final ItemGroup FOOD_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of
+            (FamilyJewels.MOD_ID, "foods"), FabricItemGroup.builder().displayName(Text.translatable("itemgroup.food_and_drinks")).icon(
+                    ()->new ItemStack(ModItems.STRAWBERRY)).entries((displayContext, entries) -> {
+                entries.add(ModItems.STRAWBERRY);
+                entries.add(ModItems.BEVANDA_ANALCOLICA);
+
+    }).build());
 
     public static final ItemGroup FLUORITE_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of
                     (FamilyJewels.MOD_ID, "fluorite_blocks"),

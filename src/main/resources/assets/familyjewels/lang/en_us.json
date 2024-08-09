@@ -9,8 +9,11 @@
   "block.familyjewels.fluorite_nether_ore": "Fluorite Nether Ore",
   "block.familyjewels.fluorite_deepslate_ore": "Fluorite Deepslate Ore",
   "block.familyjewels.magic_block": "Magic Block",
+  "item.familyjewels.strawberry": "Strawberry",
+  "item.familyjewels.bevanda_analcolica": "Slurpieee",
 
 
   "itemgroup.fluorite": "Fluorite Group",
-  "itemgroup.fluorite_blocks": "Fluorite Block Group"
+  "itemgroup.fluorite_blocks": "Fluorite Block Group",
+  "itemgroup.food_and_drinks": "Food&Drinks"
 }
