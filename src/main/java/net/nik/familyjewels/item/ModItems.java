@@ -3,6 +3,9 @@ package net.nik.familyjewels.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.text.Text;
 import net.nik.familyjewels.FamilyJewels;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -11,6 +14,8 @@ import net.minecraft.util.Identifier;
 import net.nik.familyjewels.block.custom.MagicBlock;
 import net.nik.familyjewels.item.custom.BevandaAnalcolica;
 import net.nik.familyjewels.item.custom.ChainsawItem;
+
+import java.util.List;
 
 import static net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents.*;
 
@@ -21,7 +26,16 @@ public class ModItems {
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
     public static final Item RAW_FLUORITE = registerItem("raw_fluorite", new Item(new Item.Settings()));
     public static final Item CHAINSAW = registerItem("chainsaw", new ChainsawItem(new Item.Settings().maxDamage(32)));
-    public static final Item STRAWBERRY = registerItem("strawberry", new Item(new Item.Settings().food(ModFoodComponent.STRAWBERRY)));
+
+    public static final Item STRAWBERRY = registerItem("strawberry",
+            new Item(new Item.Settings().food(ModFoodComponent.STRAWBERRY)){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.familyjewels.strawberry.1"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
     public static final Item BEVANDA_ANALCOLICA =registerItem("bevanda_analcolica", new BevandaAnalcolica(new Item.Settings()));
 
 

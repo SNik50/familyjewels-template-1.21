@@ -16,5 +16,12 @@
 
   "itemgroup.fluorite": "Fluorite Group",
   "itemgroup.fluorite_blocks": "Fluorite Block Group",
-  "itemgroup.food_and_drinks": "Food&Drinks"
+  "itemgroup.food_and_drinks": "Food&Drinks",
+  "tooltip.familyjewels.chainsaw.tooltip.shift": "Press §eShift§r for more Information!",
+  "tooltip.familyjewels.chainsaw.tooltip.1": "Chainsaw will cut down Trees fast",
+  "tooltip.familyjewels.chainsaw.tooltip.2": "§oVROOOM VROOOM§r",
+
+  "tooltip.familyjewels.magic_block.tooltip.1": "This cube is §9magical§r!",
+  "tooltip.familyjewels.strawberry.1": "This is a str§2awber§rry"
+
 }

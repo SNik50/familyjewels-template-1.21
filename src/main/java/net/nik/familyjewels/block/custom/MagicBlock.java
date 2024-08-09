@@ -18,6 +18,9 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.nik.familyjewels.item.ModItems;
+import net.nik.familyjewels.util.ModTags;
+
+import java.util.List;
 
 import static net.nik.familyjewels.item.ModItems.FLUORITE;
 
@@ -48,6 +51,12 @@ public class MagicBlock extends Block {
     }
 
     private boolean isValidItem(ItemStack stack) {
-        return stack.getItem() == ModItems.FLUORITE || stack.getItem() == ModItems.RAW_FLUORITE;
+        return stack.isIn(ModTags.Items.TRANSFORMABLE_ITEMS);
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
+        tooltip.add(Text.translatable("tooltip.familyjewels.magic_block.tooltip.1"));
+        super.appendTooltip(stack, context, tooltip, options);
     }
 }
