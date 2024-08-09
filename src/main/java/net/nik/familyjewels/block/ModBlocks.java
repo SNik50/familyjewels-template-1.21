@@ -1,5 +1,6 @@
 package net.nik.familyjewels.block;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -11,7 +12,9 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.nik.familyjewels.FamilyJewels;
+import net.nik.familyjewels.block.custom.MagicBlock;
 
+import java.util.function.ToIntFunction;
 
 
 public class ModBlocks {
@@ -40,6 +43,10 @@ public static final Block FLUORITE_END_ORE = registerBlock("fluorite_end_ore",
         new ExperienceDroppingBlock(UniformIntProvider.create(2, 4),
                 AbstractBlock.Settings.create().sounds(BlockSoundGroup.AMETHYST_BLOCK)
                 .strength(2f).requiresTool()));
+
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block", new MagicBlock(AbstractBlock.Settings.create()
+        .sounds(BlockSoundGroup.LANTERN).strength(4f).requiresTool()));
+
 
 
     public static void registerModBlocks() {

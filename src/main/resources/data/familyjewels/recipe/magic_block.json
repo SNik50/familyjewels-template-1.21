@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "familyjewels:fluorite"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "*": {
+      "item": "familyjewels:fluorite_block"
+    }
+  },
+  "pattern": [
+    "D#D",
+    "#*#",
+    "D#D"
+  ],
+  "result": {
+    "count": 1,
+    "id": "familyjewels:magic_block"
+  }
+}
