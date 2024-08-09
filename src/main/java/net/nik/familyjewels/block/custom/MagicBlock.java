@@ -17,12 +17,10 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.nik.familyjewels.item.ModItems;
+
 import net.nik.familyjewels.util.ModTags;
 
 import java.util.List;
-
-import static net.nik.familyjewels.item.ModItems.FLUORITE;
 
 public class MagicBlock extends Block {
 
