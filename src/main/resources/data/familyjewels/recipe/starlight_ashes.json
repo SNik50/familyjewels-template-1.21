@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "familyjewels:fluorite"
+    },
+    "P": {
+      "item": "minecraft:gravel"
+    }
+  },
+  "pattern": [
+    "P#P",
+    "# #",
+    "P#P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "familyjewels:starlight_ashes"
+  }
+}
